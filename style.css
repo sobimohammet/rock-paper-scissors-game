@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: rgb(9, 6, 24);
+}
+/* body {
+    padding: 5vw;
+} */
+h1 {
+    padding-top: 5vh;
+}
+h1, h2, h3 {
+    text-align: center;
+    margin: 2vh;
+    color: rgb(0, 255, 76);
+}
+h2 {
+    padding-bottom: 2vh;
+}
+#container {
+    display: flex;
+    margin: 4vh;
+    padding: 1vh;
+    background-color: rgb(0, 255, 76);
+    justify-content: center;
+    border-radius: 2vw 2vw 10vw 10vw;
+    transition: all 1s;
+}
+#container:hover {
+    border-radius: 10vw 10vw 2vw 2vw;
+}
+img {
+    width: 20vw;
+    margin: 1vh;
+}
+.child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button {
+    width: 10vw;
+    height: 6vh;
+    background-color: rgb(0, 255, 76);
+    border: 4px solid rgb(9, 6, 24);
+    color: rgb(9, 6, 24);
+    transition: all 1s;
+}
+button:hover {
+    border: 4px solid rgb(35, 5, 185);
+    background-color: rgb(9, 6, 24);
+    color: rgb(0, 255, 76);
+}
+.score {
+    display: flex;
+    justify-content: center;
+}
+.player-score {
+    margin-right: 3vw;
+}
+.computer-score {
+    margin-left: 3vw;
+}
+.player-score, .computer-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h4 {
+    margin-bottom: 3vh;
+    color: rgb(0, 255, 76);
+}
+.span-score {
+    background-color: rgb(0, 255, 76);
+    color: rgb(9, 6, 24);
+    border: 4px solid rgb(35, 5, 185);
+    width: 5vw;
+    height: 5vw;
+    border-radius: 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+}
+.span-score:hover {
+    border-radius: 1vw;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15vh 0 0 0;
+    background-color: rgb(0, 255, 76);
+    color: rgb(9, 6, 24);
+    width: 100%;
+    padding: 5vh;
+    font-size: 20px;
+    transition: all 1s;
+}
+footer:hover {
+    padding: 2vh;
+}
+a {
+    text-decoration: none;
+    color: rgb(9, 6, 24);
+    transition: all 1s;
+}
+a:hover {
+    color: rgb(35, 5, 185);
+}
+.attribute {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.author, h5, a {
+    margin-bottom: 2vh;
+}
