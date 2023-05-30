@@ -9,7 +9,7 @@ function getComputerChoice() {
 }
 
 
-let buttons = document.querySelectorAll('button');
+let buttons = document.querySelectorAll('.button');
 
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
@@ -45,14 +45,17 @@ buttons.forEach((button) => {
         //handling endgame
         if (playerScore === 5 || computerScore === 5) {
             if (playerScore > computerScore) {
-                if (confirm(`You win! ${playerScore} : ${computerScore} click 'OK' to restart`)){
-                    location.reload();
-                }
+                document.querySelector('div.result').textContent = `You win! ${playerScore} : ${computerScore}`;
+                document.querySelector('div.last').style = "display: flex";
             } else if (playerScore < computerScore) {
-                if (confirm(`You lose! computer wins ${computerScore} : ${playerScore} click 'OK' to restart`)){
-                    location.reload();
-                }
+                document.querySelector('div.result').textContent = `You lose! computer wins ${computerScore} : ${playerScore}`;
+                document.querySelector('div.last').style = "display: flex";
             }
         }
+        let restartBtn = document.querySelector('.restart-btn');
+        restartBtn.addEventListener('click', () => {
+            document.querySelector('div.last').style = "display: none";
+            location.reload();
+        })
     })
 })
