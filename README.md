@@ -5,3 +5,5 @@ In this project I will be developping a rock-paper-scissors game that is played 
   - Functions
   - Conditionals
   - Loops
+  - DOM
+  - Events
